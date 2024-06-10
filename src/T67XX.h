@@ -61,8 +61,8 @@ public:
   void setSlaveAddress(uint8_t Address);
 #endif
   void flashUpdate(void);
-  void beginCalibration(void);
-  void beginCalibration(bool waitForCompletion);
+  bool beginCalibration(void);
+  bool beginCalibration(bool waitForCompletion);
   void endCalibration(void);
 
   // 0: no error; 1: error has occurred
